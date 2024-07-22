@@ -1,0 +1,46 @@
+.main-bg {
+    background-image: url('../img/main-bg.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white);
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.white-bg {
+    background: var(--white);
+    color: var(--primary-color);
+}
+
+.second-color {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    margin: 7px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.second-color-2 {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.menu-spacing {
+    height:6.5rem;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
