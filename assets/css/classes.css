@@ -3,8 +3,33 @@
     background-size: cover;
     background-position: center center;
     color: var(--white);
-    margin: 20px;
+    margin-left: 40px;
+    border-bottom-left-radius: 15px;
+}
+
+.main-bg-1 {
+    background-image: url('../img/main-bg.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white);
+    margin-left:40px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.second-color-2 {
+    background-image: url('../img/second-color.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--primary-color);
+    margin: 40px;
     border-radius: 15px;
+}
+
+.second-color-title {
+    background: var(--secondary-color);
+    background-size: cover;
+    padding-left: -600px;
 }
 
 .white-bg {
@@ -19,12 +44,6 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-
-.second-color-2 {
-    background: var(--secondary-color);
-    color: var(--primary-color);
-}
-
 
 .main-content {
     max-width: 1200px;

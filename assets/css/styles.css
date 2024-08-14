@@ -41,11 +41,7 @@
     flex-flow: column wrap;
     justify-content: center;
     min-height: 100vh;
-}
-
-.formacao-content ul {
     text-align: center;
-    list-style-type: none;
 }
 
 .exp-content{
@@ -54,6 +50,7 @@
     justify-content: center;
     min-height: 100vh;
     text-align: center;
+    padding-top: 100px;
 }
 
 .grid {
@@ -64,11 +61,17 @@
 }
 
 .ling {
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .linguagens-content h3 {
     margin-bottom: 0.5rem;
+    padding-top: -200px;
+}
+
+.linguagens-content p {
+    text-align: center;
+    padding-top: 20px;
 }
 
 .grid h4 {
@@ -77,17 +80,6 @@
 
 .exp-content {
     color: var(--secondary-color);
-}
-
-.grid-1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--gap);
-}
-
-.grid-1 h4 {
-    font-size: 3rem;
-    color: var(--primary-color);
 }
 
 .linguagens-content{
@@ -103,7 +95,11 @@
     justify-content: center;
     min-height: 100vh;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 55px;
+}
+
+.idioma-content h3 {
+    padding-bottom: 0;
 }
 
 .cursos-content h3 {
@@ -115,6 +111,30 @@
     flex-flow: column wrap;
     justify-content: center;
     min-height: 100vh;
+}
+
+.hobbies-content p {
+    text-align: center;
+}
+.grid-hobbies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.img-hobbies {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.img-hobbies img {
+    transition: all 300ms ease-in-out;
+}
+
+.img-hobbies img:hover {
+    transform: translate(-3%, 3%)  scale(1.2);
 }
 
 .contato-content {
@@ -219,5 +239,49 @@
 
     .hobbies-img img {
         width: 100%;
+    }
+
+    .menu {
+        bottom: 0;
+        text-align: center;
+    }
+
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content{
+        height: 100vh
+    }
+
+    .menu {
+        display:none;
+    }
+
+    .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 3;
+        top: 2rem;
+        right: 2rem;
+        background-color: white;
+        color: var(--primary-color);
+        font-size:3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align:center;
+        padding:0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        display: block;
+        content:'✕';
     }
 }
